@@ -5,5 +5,5 @@ target 'Herd' do
 
   	pod 'Firebase/Core'
 	pod 'Firebase/Database'
-
+        pod 'SmartDeviceLink', '~> 6.1'
 end

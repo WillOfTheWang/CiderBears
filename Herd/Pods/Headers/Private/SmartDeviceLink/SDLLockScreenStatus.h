@@ -1,0 +1,1 @@
+../../../SmartDeviceLink/SmartDeviceLink/SDLLockScreenStatus.h
