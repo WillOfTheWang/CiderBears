@@ -1,0 +1,1 @@
+../../../SmartDeviceLink/SmartDeviceLink/SDLSubscribeWayPointsResponse.h
