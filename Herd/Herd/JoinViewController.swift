@@ -7,9 +7,29 @@
 //
 
 import UIKit
+import Firebase
 
 class JoinViewController: UIViewController {
 
+    var ref: DatabaseReference?
+    var handle: DatabaseHandle?
+    
+    @IBOutlet weak var NAme: UITextField!
+    @IBOutlet weak var EnteredCode: UITextField!
+    
+    @IBAction func enter(_ sender: Any) {
+        ref = Database.database().reference()
+        handle = ref?.child("Groups").observe(.value, with: {snapshot in
+            if let connected = snapshot.value as? Bool, connected {
+                print("Connected")
+            } else {
+                print("Not connected")
+            }
+            
+        })
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

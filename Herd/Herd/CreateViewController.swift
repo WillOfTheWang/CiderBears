@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateViewController: UIViewController {
     var database = [Int]()
+    
+    var ref:DatabaseReference?
 
+    @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var Code: UILabel!
+    
+    
+    @IBAction func Enter(_ sender: Any) {
+        ref = Database.database().reference()
+        ref?.child("Groups").childByAutoId().setValue(Code.text)
+        ref?.child("Groups").child("Users").childByAutoId().setValue(Name.text)
+        Name.text = ""
+        Code.text = ""
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         var random = Int(arc4random_uniform(100000))
         while(database.contains(random)) {
@@ -25,7 +39,6 @@ class CreateViewController: UIViewController {
         Code.text = String(random)
         
     }
-    
 /**
     // MARK: - Navigation
 

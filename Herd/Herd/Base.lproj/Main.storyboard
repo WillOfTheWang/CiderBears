@@ -99,7 +99,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x7y-rt-jEH" kind="show" id="3k5-eV-fAY"/>
+                                    <action selector="enter:" destination="UTX-nn-1BX" eventType="touchUpInside" id="5Fo-Kv-i4b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBy-2a-SVg">
@@ -132,6 +132,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dcn-1P-KdB"/>
                     </view>
+                    <connections>
+                        <outlet property="EnteredCode" destination="tnt-Jd-1Lg" id="TkA-c8-3Sh"/>
+                        <outlet property="NAme" destination="yor-W4-xkS" id="Mkt-Xk-iGu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8v-gb-5uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,6 +215,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="Enter:" destination="Isd-FT-Cpb" eventType="touchUpInside" id="s9Q-Aj-NrJ"/>
                                     <segue destination="x7y-rt-jEH" kind="show" id="ojh-Rl-Wvs"/>
                                 </connections>
                             </button>
@@ -251,6 +256,7 @@
                     </view>
                     <connections>
                         <outlet property="Code" destination="FFS-wb-Gyf" id="oWT-b2-PId"/>
+                        <outlet property="Name" destination="f1k-5a-G7J" id="wl5-NC-gIM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mM-6X-8FH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,7 +270,6 @@
         <image name="Herd Logo" width="260" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ojh-Rl-Wvs"/>
         <segue reference="y1G-zg-8aD"/>
     </inferredMetricsTieBreakers>
 </document>
