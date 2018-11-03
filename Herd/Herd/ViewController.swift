@@ -13,15 +13,10 @@ class ViewController: UIViewController {
     @IBAction func UserName(_ sender: UITextField) {
     }
     
+    
+    
+    
     @IBAction func Code(_ sender: UITextField) {
-        var random: Int
-        var database = [Int]()
-        random = 0
-        random = Int(arc4random_uniform(100))
-        while(database.contains(random)) {
-            random = Int(arc4random_uniform(100))
-        }
-        sender.text = String(random)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
