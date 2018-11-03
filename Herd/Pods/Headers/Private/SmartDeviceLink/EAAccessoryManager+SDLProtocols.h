@@ -1,0 +1,1 @@
+../../../SmartDeviceLink/SmartDeviceLink/EAAccessoryManager+SDLProtocols.h
