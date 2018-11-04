@@ -12,6 +12,7 @@
 		03631B6C218D83570030038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03631B6A218D83570030038A /* Main.storyboard */; };
 		03631B6E218D83590030038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03631B6D218D83590030038A /* Assets.xcassets */; };
 		03631B71218D83590030038A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03631B6F218D83590030038A /* LaunchScreen.storyboard */; };
+		A131BB3E218EADC9004466A4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A131BB3D218EADC9004466A4 /* CoreLocation.framework */; };
 		A148B2DA218DEA9F00D79029 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148B2D9218DEA9F00D79029 /* CreateViewController.swift */; };
 		A148B2DC218DEABD00D79029 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148B2DB218DEABD00D79029 /* JoinViewController.swift */; };
 		A148B2DE218DEADD00D79029 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148B2DD218DEADD00D79029 /* MapViewController.swift */; };
@@ -29,6 +30,7 @@
 		03631B72218D83590030038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22ED2BD2747744CC8349DABC /* Pods-Herd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Herd/Pods-Herd.debug.xcconfig"; sourceTree = "<group>"; };
 		7C17C56B4CFC1EFB8AC34D49 /* Pods-Herd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Herd.release.xcconfig"; path = "Pods/Target Support Files/Pods-Herd/Pods-Herd.release.xcconfig"; sourceTree = "<group>"; };
+		A131BB3D218EADC9004466A4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A148B2D9218DEA9F00D79029 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		A148B2DB218DEABD00D79029 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		A148B2DD218DEADD00D79029 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A131BB3E218EADC9004466A4 /* CoreLocation.framework in Frameworks */,
 				DC3940F4910B3E8FDBB3E71D /* libPods-Herd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +89,7 @@
 		70B0274C5AD6E402EF41FE66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A131BB3D218EADC9004466A4 /* CoreLocation.framework */,
 				C9A87126A8BBDE83B95E8066 /* libPods-Herd.a */,
 			);
 			name = Frameworks;

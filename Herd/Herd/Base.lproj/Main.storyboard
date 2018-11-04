@@ -185,7 +185,7 @@
                         <viewLayoutGuide key="safeArea" id="wM7-7Q-blU"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="5mZ-bH-c0Z" id="Iwi-RA-ORT"/>
+                        <outlet property="map" destination="5mZ-bH-c0Z" id="YXB-u3-1le"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2S-Rr-ep3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,7 +276,7 @@
         <image name="Herd Logo" width="260" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ftt-xl-a1l"/>
+        <segue reference="ojh-Rl-Wvs"/>
         <segue reference="FJF-Gz-EMt"/>
     </inferredMetricsTieBreakers>
 </document>
