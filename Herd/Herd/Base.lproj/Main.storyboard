@@ -100,7 +100,7 @@
                                 </state>
                                 <connections>
                                     <action selector="enter:" destination="UTX-nn-1BX" eventType="touchUpInside" id="5Fo-Kv-i4b"/>
-                                    <segue destination="x7y-rt-jEH" kind="show" id="Ftt-xl-a1l"/>
+                                    <segue destination="x7y-rt-jEH" kind="show" identifier="JointoMap" id="Ftt-xl-a1l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBy-2a-SVg">
@@ -220,7 +220,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Enter:" destination="Isd-FT-Cpb" eventType="touchUpInside" id="s9Q-Aj-NrJ"/>
-                                    <segue destination="x7y-rt-jEH" kind="show" id="ojh-Rl-Wvs"/>
+                                    <segue destination="x7y-rt-jEH" kind="show" identifier="CreatetoMap" id="ojh-Rl-Wvs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-wb-Gyf">
@@ -277,6 +277,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ojh-Rl-Wvs"/>
-        <segue reference="FJF-Gz-EMt"/>
+        <segue reference="y1G-zg-8aD"/>
     </inferredMetricsTieBreakers>
 </document>

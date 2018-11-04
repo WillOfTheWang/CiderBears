@@ -21,14 +21,20 @@ class JoinViewController: UIViewController {
         ref = Database.database().reference()
         Handle = ref?.child(EnteredCode.text!).observe(.value, with: { (snapshot) in
             if snapshot.exists() {
-                self.ref?.child(self.EnteredCode.text!).child(self.NAme.text!).setValue("location")
+                self.ref?.child(self.EnteredCode.text!).child(self.NAme.text!).child("lat").setValue("what")
+                self.ref?.child(self.EnteredCode.text!).child(self.NAme.text!).child("lon").setValue("what")
+                
             }
         })
-        
-        
+    
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mapVC = segue.destination as! MapViewController
+        mapVC.code = String(EnteredCode.text!)
+        mapVC.name = NAme.text!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

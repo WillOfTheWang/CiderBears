@@ -13,6 +13,7 @@ class CreateViewController: UIViewController {
     var database = [Int]()
     
     var ref:DatabaseReference?
+    
 
     @IBOutlet weak var Name: UITextField!
     @IBOutlet weak var Code: UILabel!
@@ -21,10 +22,20 @@ class CreateViewController: UIViewController {
     @IBAction func Enter(_ sender: Any) {
         ref = Database.database().reference()
         let C = Code.text
-        ref?.child(C!).child(Name.text!).setValue("location")
+        ref?.child(C!).child(Name.text!).child("lat").setValue("what")
+        ref?.child(C!).child(Name.text!).child("lon").setValue("what")
+        
         Name.text = ""
         Code.text = ""
         
+        //performSegue(withIdentifier: "CreatetoMap", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let mapVC = segue.destination as! MapViewController
+        mapVC.code = String(Code.text!)
+        mapVC.name = Name.text!
     }
     
     override func viewDidLoad() {
