@@ -73,6 +73,7 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
+        manager.startUpdatingLocation()
         let myLocation = location.coordinate
         let region = MKCoordinateRegionMakeWithDistance(myLocation, regionInMeters, regionInMeters)
         map.setRegion(region, animated: true)
