@@ -17,6 +17,7 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 1000
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkLocationServices()
@@ -24,7 +25,7 @@ class MapViewController: UIViewController {
     
     
     func setupLocationManager() {
-        locationManager.delegate = self as? CLLocationManagerDelegate
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
