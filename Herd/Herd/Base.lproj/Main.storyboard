@@ -184,6 +184,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wM7-7Q-blU"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="5mZ-bH-c0Z" id="Iwi-RA-ORT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2S-Rr-ep3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,6 +277,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ftt-xl-a1l"/>
-        <segue reference="jgU-lU-O5d"/>
+        <segue reference="FJF-Gz-EMt"/>
     </inferredMetricsTieBreakers>
 </document>
