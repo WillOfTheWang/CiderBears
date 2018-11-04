@@ -12,26 +12,35 @@ import Firebase
 class JoinViewController: UIViewController {
 
     var ref: DatabaseReference?
-    var handle: DatabaseHandle?
+    var Handle: DatabaseHandle?
     
     @IBOutlet weak var NAme: UITextField!
     @IBOutlet weak var EnteredCode: UITextField!
     
     @IBAction func enter(_ sender: Any) {
         ref = Database.database().reference()
-        handle = ref?.child("Groups").observe(.value, with: {snapshot in
-            if let connected = snapshot.value as? Bool, connected {
-                print("Connected")
-            } else {
-                print("Not connected")
+        Handle = ref?.child(EnteredCode.text!).observe(.value, with: { (snapshot) in
+            if snapshot.exists() {
+                self.ref?.child(self.EnteredCode.text!).child(self.NAme.text!).setValue("location")
             }
-            
         })
+        
+        
+
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let connectedRef = Database.database().reference(withPath: ".info/connected")
+        connectedRef.observe(.value, with: { snapshot in
+            if let connected = snapshot.value as? Bool, connected {
+                print("Connected")
+            } else {
+                print("Not connected")
+            }
+        })
 
         // Do any additional setup after loading the view.
     }

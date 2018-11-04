@@ -100,6 +100,7 @@
                                 </state>
                                 <connections>
                                     <action selector="enter:" destination="UTX-nn-1BX" eventType="touchUpInside" id="5Fo-Kv-i4b"/>
+                                    <segue destination="x7y-rt-jEH" kind="show" id="Ftt-xl-a1l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBy-2a-SVg">
@@ -219,8 +220,14 @@
                                     <segue destination="x7y-rt-jEH" kind="show" id="ojh-Rl-Wvs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-wb-Gyf">
+                                <rect key="frame" x="166" y="396" width="41" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSY-Ts-J3r">
-                                <rect key="frame" x="41" y="20" width="334" height="30"/>
+                                <rect key="frame" x="-113" y="20" width="334" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -228,25 +235,21 @@
                                     <segue destination="keX-wD-ThU" kind="show" id="y1G-zg-8aD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-wb-Gyf">
-                                <rect key="frame" x="166" y="396" width="41" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sDK-5o-Wma" firstAttribute="centerX" secondItem="shu-az-iQM" secondAttribute="centerX" id="0ih-Pb-XbU"/>
                             <constraint firstItem="f1k-5a-G7J" firstAttribute="top" secondItem="O3z-15-CxW" secondAttribute="top" constant="177" id="3Eo-Ee-z35"/>
-                            <constraint firstItem="HSY-Ts-J3r" firstAttribute="leading" secondItem="O3z-15-CxW" secondAttribute="leading" constant="41" id="6J4-sp-QMn"/>
+                            <constraint firstItem="O3z-15-CxW" firstAttribute="trailing" secondItem="HSY-Ts-J3r" secondAttribute="trailing" constant="154" id="5Y4-iY-EW9"/>
                             <constraint firstItem="sDK-5o-Wma" firstAttribute="leading" secondItem="Fh1-hZ-BCX" secondAttribute="leading" id="AQN-eP-oWA"/>
                             <constraint firstItem="sDK-5o-Wma" firstAttribute="centerX" secondItem="f1k-5a-G7J" secondAttribute="centerX" id="EfI-Dn-VYu"/>
                             <constraint firstItem="sDK-5o-Wma" firstAttribute="top" secondItem="Fh1-hZ-BCX" secondAttribute="top" id="Nfh-IY-pUA"/>
                             <constraint firstAttribute="trailing" secondItem="sDK-5o-Wma" secondAttribute="trailing" id="OBt-Gh-9e1"/>
                             <constraint firstItem="FFS-wb-Gyf" firstAttribute="top" secondItem="f1k-5a-G7J" secondAttribute="bottom" constant="169" id="ZeT-WM-9Ts"/>
+                            <constraint firstItem="HSY-Ts-J3r" firstAttribute="top" secondItem="O3z-15-CxW" secondAttribute="top" id="bms-bR-hhK"/>
                             <constraint firstItem="FFS-wb-Gyf" firstAttribute="leading" secondItem="O3z-15-CxW" secondAttribute="leading" constant="166" id="cJd-vg-EIU"/>
-                            <constraint firstItem="HSY-Ts-J3r" firstAttribute="trailing" secondItem="sDK-5o-Wma" secondAttribute="trailing" id="fJ9-Uk-Svq"/>
+                            <constraint firstItem="HSY-Ts-J3r" firstAttribute="leading" secondItem="Fh1-hZ-BCX" secondAttribute="leading" constant="-113" id="hWy-Sh-ZSq"/>
+                            <constraint firstItem="f1k-5a-G7J" firstAttribute="top" secondItem="HSY-Ts-J3r" secondAttribute="bottom" constant="147" id="kLS-V0-agp"/>
                             <constraint firstItem="shu-az-iQM" firstAttribute="top" secondItem="FFS-wb-Gyf" secondAttribute="bottom" constant="38" id="oMO-bs-9fE"/>
                             <constraint firstItem="O3z-15-CxW" firstAttribute="trailing" secondItem="FFS-wb-Gyf" secondAttribute="trailing" constant="168" id="rrf-9q-kvp"/>
                             <constraint firstItem="sDK-5o-Wma" firstAttribute="bottom" secondItem="O3z-15-CxW" secondAttribute="bottom" id="w7b-6n-V6r"/>
@@ -270,6 +273,7 @@
         <image name="Herd Logo" width="260" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="y1G-zg-8aD"/>
+        <segue reference="Ftt-xl-a1l"/>
+        <segue reference="jgU-lU-O5d"/>
     </inferredMetricsTieBreakers>
 </document>

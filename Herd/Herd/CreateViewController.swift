@@ -20,15 +20,27 @@ class CreateViewController: UIViewController {
     
     @IBAction func Enter(_ sender: Any) {
         ref = Database.database().reference()
-        ref?.child("Groups").childByAutoId().setValue(Code.text)
-        ref?.child("Groups").child("Users").childByAutoId().setValue(Name.text)
+        let C = Code.text
+        ref?.child(C!).child(Name.text!).setValue("location")
         Name.text = ""
         Code.text = ""
         
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        print("HI")
+        
+        let connectedRef = Database.database().reference(withPath: ".info/connected")
+        connectedRef.observe(.value, with: { snapshot in
+            if let connected = snapshot.value as? Bool, connected {
+                print("Connected")
+            } else {
+                print("Not connected")
+            }
+        })
         
         // Do any additional setup after loading the view.
         var random = Int(arc4random_uniform(100000))
